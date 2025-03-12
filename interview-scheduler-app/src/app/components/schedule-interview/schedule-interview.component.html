@@ -1,0 +1,107 @@
+<form #interviewForm="ngForm" (ngSubmit)="onSubmit(interviewForm)" class="container mt-5 p-4 bg-light rounded shadow">
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <div class="row">
+          <label for="name" class="col-form-label col-12">Recruiter Name</label>
+        </div>
+        <div class="row">
+          <input type="text" id="name" name="name" ngModel class="form-control col-12" required>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <label for="date" class="col-form-label col-12">Date</label>
+        </div>
+        <div class="row">
+          <input type="text" id="date" name="date" ngModel class="form-control col-12" required>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <div class="row">
+          <label for="time" class="col-form-label col-12">Time</label>
+        </div>
+        <div class="row">
+          <input type="text" id="time" name="time" ngModel class="form-control col-12" required>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <label for="rounds" class="col-form-label col-12">Rounds</label>
+        </div>
+        <div class="row">
+          <input type="number" id="rounds" name="rounds" ngModel class="form-control col-12" required>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <div class="row">
+          <label for="designation" class="col-form-label col-12">Designation</label>
+        </div>
+        <div class="row">
+          <input type="text" id="designation" name="designation" ngModel class="form-control col-12" required>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <label for="email" class="col-form-label col-12">Email</label>
+        </div>
+        <div class="row">
+          <input type="email" id="email" name="email" ngModel class="form-control col-12" required>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <div class="row">
+          <label for="status" class="col-form-label col-12">Status</label>
+        </div>
+        <div class="row">
+          <input type="text" id="status" name="status" ngModel class="form-control col-12" required>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <label for="recommendedDesignation" class="col-form-label col-12">Recommended Designation</label>
+        </div>
+        <div class="row">
+          <input type="text" id="recommendedDesignation" name="recommendedDesignation" ngModel class="form-control col-12" required>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <div class="row">
+          <label for="remarks" class="col-form-label col-12">Remarks</label>
+        </div>
+        <div class="row">
+          <input type="text" id="remarks" name="remarks" ngModel class="form-control col-12">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <label for="offerLetterStatus" class="col-form-label col-12">Offer Letter Status</label>
+        </div>
+        <div class="row">
+          <input type="text" id="offerLetterStatus" name="offerLetterStatus" ngModel class="form-control col-12">
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <div class="row">
+          <label for="candidateId" class="col-form-label col-12">Candidate ID</label>
+        </div>
+        <div class="row">
+          <input type="text" id="candidateId" name="candidateId" ngModel class="form-control col-12" required>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary">Schedule Interview</button>
+      </div>
+    </div>
+  </form>

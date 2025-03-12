@@ -1,0 +1,44 @@
+<form *ngIf="candidate" (ngSubmit)="onSubmit()" class="container mt-5 p-4 bg-light rounded shadow">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <label for="candidatename" class="col-form-label col-12">Candidate Name</label>
+        </div>
+        <div class="row">
+          <input type="text" id="candidatename" [(ngModel)]="candidate.candidatename" name="candidatename" class="form-control col-12" required>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <label for="emailid" class="col-form-label col-12">Email</label>
+        </div>
+        <div class="row">
+          <input type="email" id="emailid" [(ngModel)]="candidate.emailid" name="emailid" class="form-control col-12" required>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <label for="phone" class="col-form-label col-12">Phone</label>
+        </div>
+        <div class="row">
+          <input type="text" id="phone" [(ngModel)]="candidate.phone" name="phone" class="form-control col-12" required>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <label for="resume" class="col-form-label col-12">Resume</label>
+        </div>
+        <div class="row">
+          <input type="file" id="resume" (change)="onFileSelected($event)" class="form-control-file col-12" required>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary">Add Candidate</button>
+      </div>
+    </div>
+  </form>
