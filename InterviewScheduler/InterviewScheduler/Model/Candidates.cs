@@ -8,11 +8,11 @@ namespace InterviewScheduler.Model
     {
         [Key]
         [Column("candidateid")]
-        public int CandidateId { get; set; }
+        public int candidateid { get; set; }
         [Column("candidatename")]
-        public string CandidateName { get; set; }
+        public string candidatename { get; set; }
         [Column("emailid")]
-        public string emailId { get; set; }
+        public string emailid { get; set; }
         [Column("phone")]
         public string phone {  get; set; }
         [Column("resume")]
@@ -21,7 +21,7 @@ namespace InterviewScheduler.Model
         public IFormFile resumefile { get; set; }
 
        // public int RecruiterId
-        public Recruiter Recruiter { get; set; }
+        //public Recruiter Recruiter { get; set; }
 
     }
 }

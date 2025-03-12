@@ -22,8 +22,8 @@ namespace InterviewScheduler.Controllers
             {
                 var new_candidate = new Candidates
                 {
-                    CandidateName = candidate.CandidateName,
-                    emailId = candidate.emailId,
+                    candidatename = candidate.candidatename,
+                    emailid = candidate.emailid,
                     phone = candidate.phone,
                 };
                 if (candidate.resumefile != null)

@@ -8,17 +8,17 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "CandidateId",
+        "Name": "candidateid",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "CandidateName",
+        "Name": "candidatename",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "emailId",
+        "Name": "emailid",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -35,161 +35,6 @@
       {
         "Name": "resumefile",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.RecruiterId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.Date",
-        "Type": "System.DateOnly",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.Time",
-        "Type": "System.TimeOnly",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.Rounds",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.Designation",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.EmailId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.InterviewStatus",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.RecomendedDesignation",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.Remarks",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.offerLetterStatus",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.CandidateId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.CandidateId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.CandidateName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.emailId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.phone",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.resume",
-        "Type": "System.Byte[]",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.resumefile",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.RecruiterId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.Date",
-        "Type": "System.DateOnly",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.Time",
-        "Type": "System.TimeOnly",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.Rounds",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.Name",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.Designation",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.EmailId",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.InterviewStatus",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.RecomendedDesignation",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.Remarks",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.offerLetterStatus",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.CandidateId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Recruiter.candidate.Recruiter.candidate",
-        "Type": "InterviewScheduler.Model.Candidates",
         "IsRequired": false
       }
     ],

@@ -9,7 +9,7 @@ namespace InterviewScheduler.Model
     {
         [Key]
         [Column("recruiterid")]
-        public int RecruiterId {  get; set; }
+        public int Recruiterid {  get; set; }
         [Column("date")]
         public DateOnly Date {  get; set; }
         [Column("time")]
@@ -21,11 +21,11 @@ namespace InterviewScheduler.Model
         [Column("designation")]
         public string Designation { get; set; }
         [Column("emailid")]
-        public string EmailId {  get; set; }
+        public string email {  get; set; }
         [Column("status")]
-        public string InterviewStatus {  get; set; }
+        public string status {  get; set; }
         [Column("recomendeddesignation")]
-        public string RecomendedDesignation {  get; set; }
+        public string recommendedDesignation { get; set; }
         [Column("remarks")]
         public string Remarks { get; set; }
         [Column("offerletterstatus")]
@@ -35,7 +35,7 @@ namespace InterviewScheduler.Model
         [ForeignKey("CandidateId")]
         public int CandidateId {  get; set; }
 
-        public Candidates candidate { get; set; }
+        //public Candidates candidate { get; set; }
 
 
 

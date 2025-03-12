@@ -19,7 +19,7 @@ namespace InterviewScheduler.Controllers
             try
             {
                 dal.AddInterview(recruiter);
-                return Ok("Interview is Scheduled");
+                return Ok(new { msg = "Interview is Scheduled" });
             }
             catch (Exception ex)
             {

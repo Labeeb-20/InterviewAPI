@@ -15,8 +15,8 @@ namespace InterviewScheduler.Model
         {
             interviewDbContext.Candidates.Add(candidates);
             interviewDbContext.SaveChanges();
-            var record = interviewDbContext.Candidates.Find(candidates.CandidateId);
-            int id = record.CandidateId;
+            var record = interviewDbContext.Candidates.Find(candidates.candidateid);
+            int id = record.candidateid;
 
             return id;
         }
@@ -32,8 +32,8 @@ namespace InterviewScheduler.Model
             var record = interviewDbContext.Recruiters.Find(id);
             if (record != null)
             {
-                record.InterviewStatus = status.InterviewStatus;
-                record.RecomendedDesignation = status.RecomendedDesignation;
+                record.status = status.status;
+                record.recommendedDesignation = status.recommendedDesignation;
                 record.Remarks = status.Remarks;
                 interviewDbContext.SaveChanges();
             }
@@ -59,7 +59,7 @@ namespace InterviewScheduler.Model
 
         public List<Candidates> GetByEmailid(string email)
         {
-            var record = interviewDbContext.Candidates.Where(s => s.emailId == email).ToList();
+            var record = interviewDbContext.Candidates.Where(s => s.emailid == email).ToList();
             if (record != null)
             {
                 return record;
@@ -86,7 +86,7 @@ namespace InterviewScheduler.Model
 
         public List<Candidates> GetByName(string name)
         {
-            var record = interviewDbContext.Candidates.Where(s => s.CandidateName == name).ToList();
+            var record = interviewDbContext.Candidates.Where(s => s.candidatename == name).ToList();
             if (record != null)
             {
                 return record;
@@ -126,11 +126,11 @@ namespace InterviewScheduler.Model
         public void UpdateOfferLetterStatus(string name, string offer)
         {
             var cid = interviewDbContext.Candidates
-                        .Where(e => e.CandidateName == name)
-                        .Select(e => e.CandidateId).SingleOrDefault();
+                        .Where(e => e.candidatename == name)
+                        .Select(e => e.candidateid).FirstOrDefault();
 
 
-            var record = interviewDbContext.Recruiters.Where(e => e.CandidateId == cid && e.InterviewStatus == "selected").
+            var record = interviewDbContext.Recruiters.Where(e => e.CandidateId == cid && e.status == "selected").
                 SingleOrDefault();
 
             if (record != null)

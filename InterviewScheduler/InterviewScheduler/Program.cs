@@ -15,6 +15,15 @@ builder.Services.AddDbContext<InterviewDbContext>(options =>
 });
 
 builder.Services.AddScoped<IInterviewDataAccess,  InterviewDataAccess>();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("clients-allowed", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+        .AllowAnyMethod()
+        .AllowAnyHeader();
+    });
+});
 
 var app = builder.Build();
 
@@ -26,6 +35,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
+app.UseCors("clients-allowed");
 
 app.MapControllers();
 

@@ -16,14 +16,14 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "CandidateId": {
+                  "candidateid": {
                     "type": "integer",
                     "format": "int32"
                   },
-                  "CandidateName": {
+                  "candidatename": {
                     "type": "string"
                   },
-                  "emailId": {
+                  "emailid": {
                     "type": "string"
                   },
                   "phone": {
@@ -36,123 +36,17 @@
                   "resumefile": {
                     "type": "string",
                     "format": "binary"
-                  },
-                  "Recruiter.RecruiterId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Recruiter.Date": {
-                    "type": "string",
-                    "format": "date"
-                  },
-                  "Recruiter.Time": {
-                    "type": "string",
-                    "format": "time"
-                  },
-                  "Recruiter.Rounds": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Recruiter.Name": {
-                    "type": "string"
-                  },
-                  "Recruiter.Designation": {
-                    "type": "string"
-                  },
-                  "Recruiter.EmailId": {
-                    "type": "string"
-                  },
-                  "Recruiter.InterviewStatus": {
-                    "type": "string"
-                  },
-                  "Recruiter.RecomendedDesignation": {
-                    "type": "string"
-                  },
-                  "Recruiter.Remarks": {
-                    "type": "string"
-                  },
-                  "Recruiter.offerLetterStatus": {
-                    "type": "string"
-                  },
-                  "Recruiter.CandidateId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Recruiter.candidate.CandidateId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Recruiter.candidate.CandidateName": {
-                    "type": "string"
-                  },
-                  "Recruiter.candidate.emailId": {
-                    "type": "string"
-                  },
-                  "Recruiter.candidate.phone": {
-                    "type": "string"
-                  },
-                  "Recruiter.candidate.resume": {
-                    "type": "string",
-                    "format": "byte"
-                  },
-                  "Recruiter.candidate.resumefile": {
-                    "type": "string",
-                    "format": "binary"
-                  },
-                  "Recruiter.candidate.Recruiter.RecruiterId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Recruiter.candidate.Recruiter.Date": {
-                    "type": "string",
-                    "format": "date"
-                  },
-                  "Recruiter.candidate.Recruiter.Time": {
-                    "type": "string",
-                    "format": "time"
-                  },
-                  "Recruiter.candidate.Recruiter.Rounds": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Recruiter.candidate.Recruiter.Name": {
-                    "type": "string"
-                  },
-                  "Recruiter.candidate.Recruiter.Designation": {
-                    "type": "string"
-                  },
-                  "Recruiter.candidate.Recruiter.EmailId": {
-                    "type": "string"
-                  },
-                  "Recruiter.candidate.Recruiter.InterviewStatus": {
-                    "type": "string"
-                  },
-                  "Recruiter.candidate.Recruiter.RecomendedDesignation": {
-                    "type": "string"
-                  },
-                  "Recruiter.candidate.Recruiter.Remarks": {
-                    "type": "string"
-                  },
-                  "Recruiter.candidate.Recruiter.offerLetterStatus": {
-                    "type": "string"
-                  },
-                  "Recruiter.candidate.Recruiter.CandidateId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Recruiter.candidate.Recruiter.candidate": {
-                    "$ref": "#/components/schemas/Candidates"
                   }
                 }
               },
               "encoding": {
-                "CandidateId": {
+                "candidateid": {
                   "style": "form"
                 },
-                "CandidateName": {
+                "candidatename": {
                   "style": "form"
                 },
-                "emailId": {
+                "emailid": {
                   "style": "form"
                 },
                 "phone": {
@@ -162,99 +56,6 @@
                   "style": "form"
                 },
                 "resumefile": {
-                  "style": "form"
-                },
-                "Recruiter.RecruiterId": {
-                  "style": "form"
-                },
-                "Recruiter.Date": {
-                  "style": "form"
-                },
-                "Recruiter.Time": {
-                  "style": "form"
-                },
-                "Recruiter.Rounds": {
-                  "style": "form"
-                },
-                "Recruiter.Name": {
-                  "style": "form"
-                },
-                "Recruiter.Designation": {
-                  "style": "form"
-                },
-                "Recruiter.EmailId": {
-                  "style": "form"
-                },
-                "Recruiter.InterviewStatus": {
-                  "style": "form"
-                },
-                "Recruiter.RecomendedDesignation": {
-                  "style": "form"
-                },
-                "Recruiter.Remarks": {
-                  "style": "form"
-                },
-                "Recruiter.offerLetterStatus": {
-                  "style": "form"
-                },
-                "Recruiter.CandidateId": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.CandidateId": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.CandidateName": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.emailId": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.phone": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.resume": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.resumefile": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.RecruiterId": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.Date": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.Time": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.Rounds": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.Name": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.Designation": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.EmailId": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.InterviewStatus": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.RecomendedDesignation": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.Remarks": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.offerLetterStatus": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.CandidateId": {
-                  "style": "form"
-                },
-                "Recruiter.candidate.Recruiter.candidate": {
                   "style": "form"
                 }
               }
@@ -508,45 +309,10 @@
   },
   "components": {
     "schemas": {
-      "Candidates": {
-        "type": "object",
-        "properties": {
-          "candidateId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "candidateName": {
-            "type": "string",
-            "nullable": true
-          },
-          "emailId": {
-            "type": "string",
-            "nullable": true
-          },
-          "phone": {
-            "type": "string",
-            "nullable": true
-          },
-          "resume": {
-            "type": "string",
-            "format": "byte",
-            "nullable": true
-          },
-          "resumefile": {
-            "type": "string",
-            "format": "binary",
-            "nullable": true
-          },
-          "recruiter": {
-            "$ref": "#/components/schemas/Recruiter"
-          }
-        },
-        "additionalProperties": false
-      },
       "Recruiter": {
         "type": "object",
         "properties": {
-          "recruiterId": {
+          "recruiterid": {
             "type": "integer",
             "format": "int32"
           },
@@ -570,15 +336,15 @@
             "type": "string",
             "nullable": true
           },
-          "emailId": {
+          "email": {
             "type": "string",
             "nullable": true
           },
-          "interviewStatus": {
+          "status": {
             "type": "string",
             "nullable": true
           },
-          "recomendedDesignation": {
+          "recommendedDesignation": {
             "type": "string",
             "nullable": true
           },
@@ -593,9 +359,6 @@
           "candidateId": {
             "type": "integer",
             "format": "int32"
-          },
-          "candidate": {
-            "$ref": "#/components/schemas/Candidates"
           }
         },
         "additionalProperties": false

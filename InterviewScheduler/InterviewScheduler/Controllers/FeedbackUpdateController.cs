@@ -20,7 +20,7 @@ namespace InterviewScheduler.Controllers
             try
             {
                 dal.UpdateStatus(id, recruiter);
-                return Ok("Record updated");
+                return Ok(new { msg = "Record updated" });
             }
             catch (Exception ex)
             {   

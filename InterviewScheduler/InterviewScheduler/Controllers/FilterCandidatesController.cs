@@ -21,7 +21,7 @@ namespace InterviewScheduler.Controllers
             try
             {
                 dal.UpdateOfferLetterStatus(Name, offerLetterStatus);
-                return Ok("Record Updated");
+                return Ok(new { msg = "Record Updated" });
             }
             catch (Exception ex)
             {
